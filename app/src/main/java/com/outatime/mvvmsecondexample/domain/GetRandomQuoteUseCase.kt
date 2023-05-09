@@ -12,7 +12,7 @@ class GetRandomQuoteUseCase @Inject constructor(private val repository: QuoteRep
 
         if(!quotes.isNullOrEmpty()) {
             val randomNumber = (quotes.indices).random()
-            return quotes[randomNumber]
+            return quotes[randomNumber] // returning a quote
         }
 
         return null

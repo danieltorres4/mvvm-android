@@ -16,7 +16,7 @@ class QuoteViewModel @Inject constructor(
     private val getQuotesUseCase: GetQuotesUseCase,
     private val getRandomQuoteUseCase: GetRandomQuoteUseCase
 ): ViewModel() {
-    val quoteModel = MutableLiveData<Quote>() // model live data
+    val quoteModel = MutableLiveData<Quote>() // model live data, this one will be painted in the screen
     val isLoading = MutableLiveData<Boolean>() // in order to show or hide the progress bar
 
     fun onCreate() {
